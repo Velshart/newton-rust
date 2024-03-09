@@ -7,7 +7,7 @@ fn df(x: f64) -> f64 {
     2.0 * x
 }
 
-//iteracyjnej z pętlą for (z ewentualnymi break continue return)
+//iteracyjna z pętlą for (z ewentualnymi break continue return)
 fn newton_for_loop(x0: f64, eps: f64, n: u128) -> f64 {
     let mut x: f64 = x0;
 
