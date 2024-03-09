@@ -35,7 +35,7 @@ fn newton_recursive(x0: f64, epsilon: f64, iterations: u128, counter: u128, x: f
 
     let dx: f64 = fx / dfx;
     if dx.abs() < epsilon {
-        return newton_recursive(x0, epsilon, iterations, iterations, x-dx) //zakonczenie rekurencji
+        return newton_recursive(x0, epsilon, iterations, iterations, x-dx)
     }
     return newton_recursive(x0, epsilon, iterations, counter + 1, x-dx);
 }
